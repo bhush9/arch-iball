@@ -1,0 +1,16 @@
+pkgname=wacom-kmp-desktop
+pkgver=current
+pkgrel=2
+pkgdesc="This package contains the wacom kernel driver."
+arch=('i686')
+url="http://software.opensuse.org/package/wacom-kmp-desktop"
+license=('unknown')
+makedepends=('rpmextract')
+options=('emptydirs')
+source=("http://download.opensuse.org/repositories/home:/toganm:/kernel/openSUSE_Factory/i586/wacom-kmp-desktop-0.11.1_k3.4.4_3-2.40.TM.i586.rpm")
+md5sums=('d09b50197433185710232d9be738c819')
+
+build() {
+  cd "$pkgdir"
+  rpmextract.sh ../wacom-kmp-desktop-0.11.1_k3.4.4_3-2.40.TM.i586.rpm
+}

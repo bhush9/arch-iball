@@ -1,0 +1,16 @@
+pkgname=x11-input-wizardpen
+pkgver=current
+pkgrel=2
+pkgdesc="A Linux/HAL/udev/X11 driver for most non-Wacom graphics pads."
+arch=('x86_64')
+url="http://software.opensuse.org/package/x11-input-wizardpen"
+license=('unknown')
+makedepends=('rpmextract')
+options=('emptydirs')
+source=("http://download.opensuse.org/repositories/home:/pbleser:/staging/openSUSE_Factory/x86_64/x11-input-wizardpen-0.8.1-2.46.x86_64.rpm")
+md5sums=('4293a8ef54cb4d0db9922e70962f8152')
+
+build() {
+  cd "$pkgdir"
+  rpmextract.sh ../x11-input-wizardpen-0.8.1-2.46.x86_64.rpm
+}
