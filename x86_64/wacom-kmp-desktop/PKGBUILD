@@ -8,7 +8,7 @@ license=('unknown')
 makedepends=('rpmextract')
 options=('emptydirs')
 source=("http://download.opensuse.org/repositories/home:/toganm:/kernel/openSUSE_Factory/x86_64/wacom-kmp-desktop-0.11.1_k3.4.4_3-2.40.TM.x86_64.rpm")
-md5sums=('135358c620d7566dd7691aae1035a9d6')
+md5sums=('2cfc0e15503956802e6b956e999a0340')
 
 build() {
   cd "$pkgdir"
